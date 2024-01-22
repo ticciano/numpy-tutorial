@@ -105,3 +105,16 @@ arr[0] = 42
 print(arr)
 print(x)
 
+
+# Print the shape of a 2-D array:
+arr = np.array([[1, 2, 3], [4, 5, 6],[4, 5, 6]])
+print(arr.shape)
+
+arr = np.array([1, 2, 3, 4], ndmin=5)
+print('shape of the array: ', arr.shape)
+
+# Reshaping
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+newarr = arr.reshape(4, 3)
+print(newarr.shape)
