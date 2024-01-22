@@ -1,5 +1,6 @@
 #Numpy Intro
 import numpy as np
+from numpy import random
 
 arr = np.array([1,2,3,4,5])
 
@@ -118,3 +119,26 @@ arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
 newarr = arr.reshape(4, 3)
 print(newarr.shape)
+
+
+# Array iteration
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+for x in arr:
+  print(x)
+  
+
+# Join two arrays
+  
+arr1 = np.array([1, 2, 3])
+
+arr2 = np.array([4, 5, 6])
+
+arr = np.concatenate((arr1,arr2))
+
+# Split the array in 3 parts:
+
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+newarr = np.array_split(arr, 3)
+
